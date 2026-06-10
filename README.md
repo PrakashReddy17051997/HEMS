@@ -1,11 +1,10 @@
 # Home Energy Management System (HEMS) — Prognosebasierte Optimierung & MPC
 
-> Portfolioprojekt zur Demonstration prognosebasierter Optimierungsalgorithmen für ein Heimenergie-Managementsystem (Wärmepumpe, Batteriespeicher, E-Auto, schaltbare Lasten).
 
 ---
 ---
 
-# TEIL 1 — DEUTSCH
+# DEUTSCH
 
 ## 1. Überblick
 
@@ -77,12 +76,11 @@ run('sim_validation.m')             % 3-Wege-Vergleich + Abbildung
 - Weiche Komfort-Nebenbedingungen sichern Lösbarkeit unter Prognosefehler.
 - Modellabweichung (LP-Modell vs. Simulink-Strecke) motiviert die MPC.
 
-*Erstellt als technisches Portfolioprojekt. Alle Kostenzahlen beziehen sich auf das beschriebene Tagesszenario.*
 
 ---
 ---
 
-# PART 2 — ENGLISH
+#  ENGLISH
 
 ## 1. Overview
 
@@ -154,4 +152,4 @@ run('sim_validation.m')             % 3-way comparison + figure
 - Soft comfort constraints ensure feasibility under forecast error.
 - Model mismatch (LP model vs. Simulink plant) is the motivation for MPC.
 
-*Built as a technical portfolio project. All cost figures refer to the described daily scenario.*
+
