@@ -37,7 +37,7 @@ Thermisches 1R1C-Gebäudemodell (Wärmekapazität `C_bldg`, Verlustkoeffizient `
 
 Formuliert als lineares Programm. Entscheidungsvariablen pro Zeitschritt: Wärmepumpenleistung (aufgeteilt in Heizen `P_hp_heat` und Warmwasser `P_hp_dhw` — die Aufteilung hält das Problem **linear**), E-Auto-Ladung, Batterie laden/entladen, schaltbare Geräte, Netzbezug/-einspeisung. Zielfunktion: Minimierung der Tagesstromkosten. Gelöst mit MATLAB `linprog` (Optimization Toolbox) über das `optimproblem`-Framework.
 
-> **Lektion:** Der ursprüngliche bilineare Term `P_hp · f_heat` machte das Problem nichtlinear. Die Aufteilung in zwei lineare Leistungsvariablen behebt dies. Außerdem wurde CasADi auf Apple Silicon zugunsten des nativen `linprog` aufgegeben (Solver muss zur Problemstruktur passen).
+
 
 ### 3.3 Model Predictive Control (MPC)
 
@@ -114,7 +114,7 @@ On the identical Simulink plant, optimization reduces daily cost by about **64 %
 
 Formulated as a linear program. Decision variables per slot: heat-pump power (split into heating `P_hp_heat` and DHW `P_hp_dhw` — the split keeps the problem **linear**), EV charging, battery charge/discharge, shiftable appliances, grid import/export. Objective: minimize daily electricity cost. Solved with MATLAB `linprog` (Optimization Toolbox) via the `optimproblem` framework.
 
-> **Lesson:** The original bilinear term `P_hp · f_heat` made the problem nonlinear; splitting into two linear power variables fixes it. CasADi on Apple Silicon was abandoned in favor of native `linprog` (the solver must match the problem structure).
+
 
 ### 3.3 Model Predictive Control (MPC)
 
